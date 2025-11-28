@@ -1,0 +1,16 @@
+# Exported from Render on 2025-11-28T11:53:51Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    services:
+    - type: web
+      name: SaaS-contract-aggregation-
+      runtime: docker
+      repo: https://github.com/dylangoble0-dotcom/SaaS-contract-aggregation-
+      plan: free
+      region: oregon
+      dockerContext: .
+      dockerfilePath: ./Dockerfile
+      autoDeployTrigger: commit
