@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark theme variables */
+:root {
+  --primary: #004830;
+  --accent: #7cafb0;
+  --bg: #071014;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: #e6eef0;
+}
+
+.header-blur {
+  backdrop-filter: blur(6px) saturate(1.05);
+  background: rgba(10,14,15,0.35);
+}
