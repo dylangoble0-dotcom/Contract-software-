@@ -1,0 +1,16 @@
+# Exported from Render on 2025-11-28T12:52:08Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Vercel
+    services:
+    - type: web
+      name: Contract-software-
+      runtime: rust
+      repo: https://github.com/dylangoble0-dotcom/Contract-software-
+      plan: free
+      region: oregon
+      buildCommand: cargo build --release
+      startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+      autoDeployTrigger: commit
