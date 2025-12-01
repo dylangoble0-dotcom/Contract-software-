@@ -1,0 +1,16 @@
+# Exported from Render on 2025-11-28T11:55:02Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    databases:
+    - name: Render_contract
+      databaseName: render_contract
+      user: render_contract_user
+      plan: free
+      region: oregon
+      ipAllowList:
+      - source: 0.0.0.0/0
+        description: everywhere
+      postgresMajorVersion: "18"
